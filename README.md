@@ -1,5 +1,66 @@
 # browser-ai-bridge
 
+## Using the pepehug2 repository
+
+This is the pepehug2 fork of [browser-ai-bridge](https://github.com/pepehug2/browser-ai-bridge).
+The original upstream project is maintained at
+[jeffrey-nz/browser-ai-bridge](https://github.com/jeffrey-nz/browser-ai-bridge).
+
+### Clone and install
+
+    git clone https://github.com/pepehug2/browser-ai-bridge.git
+    cd browser-ai-bridge
+    npm ci
+    cp .env.example .env
+
+Requirements: Node.js 20 or newer and Google Chrome/Chromium. Edit .env only
+when you need to change the defaults. Keep browser profiles, cookies, .env
+files, tokens, and other credentials private; never commit them.
+
+### Start the local server
+
+    npm start
+
+Complete the first-run provider setup in the browser wizard. Once the server
+reports that setup is complete, check it locally:
+
+    curl http://127.0.0.1:3333/api/ping
+
+The complete endpoint reference and request examples are in
+[API.md](API.md). Do not expose the local API to an untrusted network; keep it
+bound to localhost unless you have deliberately configured authentication and
+network access controls.
+
+### Verify changes before pushing
+
+    npm test
+    npm run lint
+    npm run check:docs
+    npm run check:reachable
+    npm audit
+
+### Keep your fork up to date
+
+    git remote add upstream https://github.com/jeffrey-nz/browser-ai-bridge.git
+    git fetch upstream
+    git switch main
+    git merge upstream/main
+    git push origin main
+
+Review upstream changes before merging them, especially dependency, browser
+automation, authentication, and provider-specific changes.
+
+### Provider and service rules
+
+Use browser automation only with providers and accounts where the provider's
+current terms and permissions allow the specific automation. Do not use this
+project to automate ChatGPT web prompt submission or extract ChatGPT web
+outputs, or to bypass plan limits, rate limits, or other service restrictions.
+Use an officially supported API or integration for automated ChatGPT workflows.
+
+---
+
+
 A local REST API server that automates real browser sessions to interact with AI web interfaces. No API keys required — it logs into AI services as a normal user would and drives them programmatically via [Playwright](https://playwright.dev/) over the Chrome DevTools Protocol (CDP).
 
 ## Supported providers
@@ -56,7 +117,7 @@ npx browser-ai-bridge
 ### From source
 
 ```bash
-git clone https://github.com/jeffrey-nz/browser-ai-bridge.git
+git clone https://github.com/pepehug2/browser-ai-bridge.git
 cd browser-ai-bridge
 npm install
 cp .env.example .env
