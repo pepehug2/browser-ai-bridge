@@ -1,14 +1,14 @@
 # browser-ai-bridge
 
-## Using the pepehug2 repository
+## Using the marcelobregoli repository
 
-This is the pepehug2 fork of [browser-ai-bridge](https://github.com/pepehug2/browser-ai-bridge).
+This is the marcelobregoli fork of [browser-ai-bridge](https://github.com/marcelobregoli/browser-ai-bridge).
 The original upstream project is maintained at
 [jeffrey-nz/browser-ai-bridge](https://github.com/jeffrey-nz/browser-ai-bridge).
 
 ### Clone and install
 
-    git clone https://github.com/pepehug2/browser-ai-bridge.git
+    git clone https://github.com/marcelobregoli/browser-ai-bridge.git
     cd browser-ai-bridge
     npm ci
     cp .env.example .env
@@ -117,7 +117,7 @@ npx browser-ai-bridge
 ### From source
 
 ```bash
-git clone https://github.com/pepehug2/browser-ai-bridge.git
+git clone https://github.com/marcelobregoli/browser-ai-bridge.git
 cd browser-ai-bridge
 npm install
 cp .env.example .env
