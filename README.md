@@ -8,7 +8,7 @@ The original upstream project is maintained at
 
 [jeffrey-nz/browser-ai-bridge](https://github.com/jeffrey-nz/browser-ai-bridge).
 
-**Project case study:** https://marcelo-bregoli.pages.dev/projects/browser-ai-bridge.html
+**Project case study:** https://marcelo-bregoli.pages.dev/projects/browser-ai-bridge
 
 ### Clone and install
 
