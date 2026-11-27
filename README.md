@@ -6,6 +6,10 @@ This is the marcelobregoli fork of [browser-ai-bridge](https://github.com/marcel
 The original upstream project is maintained at
 [jeffrey-nz/browser-ai-bridge](https://github.com/jeffrey-nz/browser-ai-bridge).
 
+[jeffrey-nz/browser-ai-bridge](https://github.com/jeffrey-nz/browser-ai-bridge).
+
+**Project case study:** https://marcelo-bregoli.pages.dev/projects/browser-ai-bridge.html
+
 ### Clone and install
 
     git clone https://github.com/marcelobregoli/browser-ai-bridge.git
